@@ -7,6 +7,7 @@
   <meta name="description" content="MEERA KIDS presenta robots educativos con experiencias en realidad aumentada, retos STEM y competencias tecnológicas para niñas y niños.">
   <link rel="icon" href="assets/img/logo-circular.png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -22,7 +23,6 @@
           <li><a href="tecnologia-ra.html">Realidad aumentada</a></li>
           <li><a href="impacto.html">Impacto</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-		  <li><a href="test/test.html">prueba</a></li>
         </ul>
       </nav>
       <div class="nav-actions">
@@ -66,15 +66,15 @@
           <div class="hero-product-grid">
             <article class="hero-card">
               <span>Omnidireccional</span>
-              <img src="assets/img/coche-omni.png" alt="Robot omnidireccional de MEERA KIDS">
+              <model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
             </article>
             <article class="hero-card">
               <span>SCARA</span>
-              <img src="assets/img/scara.png" alt="Brazo robótico SCARA de MEERA KIDS">
+              <model-viewer class="product-model" src="assets/models/scara_model.glb" alt="Modelo 3D del brazo robótico SCARA Motion AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="scara"></model-viewer>
             </article>
             <article class="hero-card" style="grid-column: 1 / -1; min-height: 210px;">
               <span>Dron</span>
-              <img src="assets/img/dron.png" alt="Dron educativo de MEERA KIDS" style="max-height: 180px;">
+              <model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer>
             </article>
           </div>
         </div>
@@ -93,7 +93,7 @@
         <div class="product-grid">
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/img/coche-omni.png" alt="Coche omnidireccional">
+              <model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
             </div>
             <div class="tag-row">
               <span class="tag">Móvil</span>
@@ -109,7 +109,7 @@
           </article>
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/img/scara.png" alt="Robot SCARA">
+              <model-viewer class="product-model" src="assets/models/scara_model.glb" alt="Modelo 3D del brazo robótico SCARA Motion AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="scara"></model-viewer>
             </div>
             <div class="tag-row">
               <span class="tag">Manipulación</span>
@@ -125,7 +125,7 @@
           </article>
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/img/dron.png" alt="Dron educativo">
+              <model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer>
             </div>
             <div class="tag-row">
               <span class="tag">Vuelo</span>

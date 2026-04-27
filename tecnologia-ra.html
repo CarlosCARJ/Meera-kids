@@ -7,6 +7,7 @@
   <meta name="description" content="Conoce cómo MEERA KIDS integra robots físicos y experiencias en realidad aumentada.">
   <link rel="icon" href="assets/img/logo-circular.png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -97,17 +98,17 @@
     <section class="section">
       <div class="container grid-3">
         <article class="card">
-          <div class="product-card-image"><img src="assets/img/coche-omni.png" alt="Robot omnidireccional"></div>
+          <div class="product-card-image"><model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer></div>
           <h3>Rutas y precisión</h3>
           <p>El vehículo omnidireccional puede seguir recorridos, zonas de puntuación y circuitos marcados digitalmente.</p>
         </article>
         <article class="card">
-          <div class="product-card-image"><img src="assets/img/scara.png" alt="Brazo SCARA"></div>
+          <div class="product-card-image"><model-viewer class="product-model" src="assets/models/scara_model.glb" alt="Modelo 3D del brazo robótico SCARA Motion AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="scara"></model-viewer></div>
           <h3>Secuencias y estaciones</h3>
           <p>El robot SCARA puede asociarse con instrucciones, piezas virtuales y pasos de automatización superpuestos.</p>
         </article>
         <article class="card">
-          <div class="product-card-image"><img src="assets/img/dron.png" alt="Dron educativo"></div>
+          <div class="product-card-image"><model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer></div>
           <h3>Misiones y trayectorias</h3>
           <p>El dron puede interactuar con rutas, checkpoints y desafíos visuales que enriquecen la navegación y el control espacial.</p>
         </article>

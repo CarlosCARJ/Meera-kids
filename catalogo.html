@@ -7,6 +7,7 @@
   <meta name="description" content="Catálogo de productos MEERA KIDS con robots educativos físicos y experiencias en realidad aumentada.">
   <link rel="icon" href="assets/img/logo-circular.png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -52,7 +53,7 @@
         <div class="catalog-grid">
           <article class="product-card" data-category="movil ar">
             <div class="product-card-image">
-              <img src="assets/img/coche-omni.png" alt="Coche omnidireccional de MEERA KIDS">
+              <model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
             </div>
             <div class="tag-row">
               <span class="tag">Movilidad</span>
@@ -74,7 +75,7 @@
 
           <article class="product-card" data-category="manipulacion ar">
             <div class="product-card-image">
-              <img src="assets/img/scara.png" alt="Brazo SCARA de MEERA KIDS">
+              <model-viewer class="product-model" src="assets/models/scara_model.glb" alt="Modelo 3D del brazo robótico SCARA Motion AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="scara"></model-viewer>
             </div>
             <div class="tag-row">
               <span class="tag">Manipulación</span>
@@ -96,7 +97,7 @@
 
           <article class="product-card" data-category="vuelo ar">
             <div class="product-card-image">
-              <img src="assets/img/dron.png" alt="Dron educativo de MEERA KIDS">
+              <model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer>
             </div>
             <div class="tag-row">
               <span class="tag">Vuelo</span>

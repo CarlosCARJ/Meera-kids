@@ -7,6 +7,7 @@
   <meta name="description" content="Aero Mission AR, dron educativo para retos de trayectorias y realidad aumentada.">
   <link rel="icon" href="assets/img/logo-circular.png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -42,7 +43,7 @@
     <section class="section">
       <div class="container product-layout">
         <div class="product-visual">
-          <img src="assets/img/dron.png" alt="Dron Aero Mission AR">
+          <model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer>
         </div>
         <article class="side-panel product-copy">
           <div class="tag-row">

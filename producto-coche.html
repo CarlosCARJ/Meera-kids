@@ -7,6 +7,7 @@
   <meta name="description" content="Omni Rover AR, robot omnidireccional modular de MEERA KIDS.">
   <link rel="icon" href="assets/img/logo-circular.png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -42,7 +43,7 @@
     <section class="section">
       <div class="container product-layout">
         <div class="product-visual">
-          <img src="assets/img/coche-omni.png" alt="Robot omnidireccional Omni Rover AR">
+          <model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
         </div>
         <article class="side-panel product-copy">
           <div class="tag-row">
