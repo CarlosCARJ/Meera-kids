@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  document.querySelectorAll('[data-demo-form]').forEach((form) => {
+  document.querySelectorAll('[data-contact-form]').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       const status = form.querySelector('.form-status');
