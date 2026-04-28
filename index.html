@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEERA KIDS | Robótica educativa y realidad aumentada</title>
-  <meta name="description" content="MEERA KIDS presenta robots educativos con experiencias en realidad aumentada, retos STEM y competencias tecnológicas para niñas y niños.">
+  <title>MEERA KIDS | Robótica educativa gamificada</title>
+  <meta name="description" content="MEERA KIDS es un ecosistema de robótica educativa gamificada con robots modulares, realidad aumentada y competencias STEM para niñas y niños.">
   <link rel="icon" href="assets/img/logo-circular.png">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -12,21 +12,21 @@
 <body>
   <header class="topbar">
     <div class="container navbar">
-      <a class="brand" href="index.html">
-        <img src="assets/img/logo-completo.png" alt="Logo completo de MEERA KIDS">
+      <a class="brand" href="index.html" aria-label="Ir al inicio de MEERA KIDS">
+        <img src="assets/img/logo-completo-dark.png" alt="Logo de MEERA KIDS">
       </a>
       <button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menú">☰</button>
       <nav>
         <ul class="nav-links" data-menu>
           <li><a class="active" href="index.html">Inicio</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="catalogo.html">Productos</a></li>
           <li><a href="tecnologia-ra.html">Realidad aumentada</a></li>
           <li><a href="impacto.html">Impacto</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
       <div class="nav-actions">
-        <a class="button" href="catalogo.html">Ver productos</a>
+        <a class="button" href="catalogo.html">Ver precios</a>
       </div>
     </div>
   </header>
@@ -34,47 +34,34 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="kicker">Ecosistema STEM físico + AR</span>
-          <h1>Robótica educativa con <span class="accent">realidad aumentada</span> para aprender, jugar y competir.</h1>
-          <p>MEERA KIDS integra robots físicos modulares, experiencias virtuales en realidad aumentada y retos gamificados para acercar la tecnología a niñas y niños de 8 a 12 años desde la escuela, el hogar y espacios comunitarios.</p>
-          <div class="badge-row">
-            <span class="badge badge-highlight">Robots modulares</span>
-            <span class="badge">Retos STEM</span>
-            <span class="badge">Competencias nacionales e internacionales</span>
-          </div>
+        <div class="hero-copy">
+          <span class="kicker">Robótica modular + retos STEM</span>
+          <h1>Robots educativos para aprender, jugar y competir.</h1>
+          <p>MEERA KIDS combina un robot móvil omnidireccional, módulos intercambiables, realidad aumentada y competencias gamificadas para acercar la robótica a niñas y niños de 8 a 12 años.</p>
           <div class="hero-actions">
-            <a class="button" href="catalogo.html">Explorar catálogo</a>
-            <a class="button-secondary" href="tecnologia-ra.html">Conocer la experiencia AR</a>
+            <a class="button" href="catalogo.html">Explorar productos</a>
+            <a class="button-ghost" href="tecnologia-ra.html">Ver experiencia AR</a>
           </div>
-          <div class="pillars">
-            <div class="pillar">
-              <strong class="accent">Aprendizaje activo</strong>
-              <p>Los estudiantes interactúan con robots listos para usar y dedican más tiempo a experimentar y resolver retos.</p>
-            </div>
-            <div class="pillar">
-              <strong class="accent-cyan">Modelo híbrido</strong>
-              <p>La versión física y la versión en realidad aumentada amplían el acceso incluso cuando no hay un robot disponible.</p>
-            </div>
-            <div class="pillar">
-              <strong class="accent">Impacto social</strong>
-              <p>Por cada kit adquirido, se puede ampliar el acceso a experiencias tecnológicas en escuelas con recursos limitados.</p>
-            </div>
+          <div class="hero-proof">
+            <span>Formato físico</span>
+            <span>Retos gamificados</span>
+            <span>Comunidad STEM</span>
           </div>
         </div>
-        <div class="hero-panel">
+
+        <div class="hero-panel" aria-label="Modelos 3D de MEERA KIDS">
           <div class="hero-product-grid">
-            <article class="hero-card">
-              <span>Omnidireccional</span>
-              <model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
+            <article class="hero-card hero-card-main">
+              <span>MEERA Rover</span>
+              <model-viewer class="product-model" src="assets/models/Rover.gbl" alt="Modelo 3D del robot móvil omnidireccional MEERA Rover" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
             </article>
             <article class="hero-card">
-              <span>SCARA</span>
-              <model-viewer class="product-model" src="assets/models/scara_model.glb" alt="Modelo 3D del brazo robótico SCARA Motion AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="scara"></model-viewer>
+              <span>Básquet robótico</span>
+              <model-viewer class="product-model" src="assets/models/Basquet.gbl" alt="Modelo 3D del módulo de básquet robótico" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="basquet"></model-viewer>
             </article>
-            <article class="hero-card" style="grid-column: 1 / -1; min-height: 210px;">
-              <span>Dron</span>
-              <model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer>
+            <article class="hero-card">
+              <span>Circuito de carrera</span>
+              <model-viewer class="product-model" src="assets/models/Carreras.gbl" alt="Modelo 3D del módulo de circuito de carrera" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="carreras"></model-viewer>
             </article>
           </div>
         </div>
@@ -82,196 +69,181 @@
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">Un catálogo diseñado para <span class="accent">experiencias inmersivas</span></h2>
-            <p>Cada producto se integra con actividades de realidad aumentada, retos guiados y dinámicas de competencia.</p>
-          </div>
-          <a class="button-ghost" href="catalogo.html">Ir al catálogo completo</a>
+      <div class="container section-head">
+        <div>
+          <span class="kicker">Ecosistema MEERA KIDS</span>
+          <h2 class="section-title">Una experiencia diseñada para familias, escuelas y clubes STEM.</h2>
         </div>
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-card-image">
-              <model-viewer class="product-model" src="assets/models/rover.glb" alt="Modelo 3D del robot omnidireccional Omni Rover AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
-            </div>
-            <div class="tag-row">
-              <span class="tag">Móvil</span>
-              <span class="tag">Modular</span>
-              <span class="tag">Realidad aumentada</span>
-            </div>
-            <h3>Omni Rover AR</h3>
-            <p>Plataforma omnidireccional de cuatro ruedas preparada para retos de desplazamiento, precisión y competencias gamificadas.</p>
-            <div class="price-row">
-              <span class="price-note">Ideal para iniciar</span>
-              <a class="button-secondary" href="producto-coche.html">Ver detalle</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="product-card-image">
-              <model-viewer class="product-model" src="assets/models/scara_model.glb" alt="Modelo 3D del brazo robótico SCARA Motion AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="scara"></model-viewer>
-            </div>
-            <div class="tag-row">
-              <span class="tag">Manipulación</span>
-              <span class="tag">Laboratorio</span>
-              <span class="tag">AR guiada</span>
-            </div>
-            <h3>SCARA Motion AR</h3>
-            <p>Brazo robótico orientado a secuencias, coordinación y automatización con visualización aumentada paso a paso.</p>
-            <div class="price-row">
-              <span class="price-note">Para retos de control</span>
-              <a class="button-secondary" href="producto-scara.html">Ver detalle</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="product-card-image">
-              <model-viewer class="product-model" src="assets/models/Drone.GLB" alt="Modelo 3D del dron Aero Mission AR" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="drone"></model-viewer>
-            </div>
-            <div class="tag-row">
-              <span class="tag">Vuelo</span>
-              <span class="tag">Trayectorias</span>
-              <span class="tag">Misión AR</span>
-            </div>
-            <h3>Aero Mission AR</h3>
-            <p>Dron educativo para actividades de navegación, retos de trayectorias y experiencias inmersivas con misiones virtuales.</p>
-            <div class="price-row">
-              <span class="price-note">Aprendizaje dinámico</span>
-              <a class="button-secondary" href="producto-dron.html">Ver detalle</a>
-            </div>
-          </article>
-        </div>
+        <p class="section-summary">El robot físico se complementa con módulos de juego, retos de programación básica, acceso digital y competencias para mantener el aprendizaje activo.</p>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">¿Qué hace diferente a <span class="accent-cyan">MEERA KIDS</span>?</h2>
-            <p>La propuesta combina hardware educativo, experiencias digitales y acceso a competencias para fortalecer vocaciones STEM.</p>
-          </div>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <div class="card-icon">⚙</div>
-            <h3>Robots listos para usar</h3>
-            <p>La arquitectura modular reduce la complejidad inicial y permite concentrar el tiempo en la interacción, la programación y la resolución de retos.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">◌</div>
-            <h3>Formato físico y en AR</h3>
-            <p>Las experiencias pueden continuar en realidad aumentada cuando el robot físico no está disponible, ampliando el acceso y la continuidad del aprendizaje.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">★</div>
-            <h3>Competencias con propósito</h3>
-            <p>El ecosistema conecta a niñas y niños con desafíos tecnológicos compartidos y con la experiencia motivadora de competir a distintas escalas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="modelo-ecosistema">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">Modelo del <span class="accent">ecosistema</span></h2>
-            <p>La propuesta comercial se estructura en tres niveles que combinan acceso digital, producto físico modular y una comunidad activa alrededor de retos y competencias STEM.</p>
-          </div>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <div class="card-icon">1</div>
-            <h3>Acceso digital escalable</h3>
-            <p>El robot en realidad aumentada funciona como puerta de entrada al ecosistema. Permite que niñas y niños participen en retos y competencias STEM desde casa o la escuela sin necesidad de adquirir inicialmente un robot físico.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">2</div>
-            <h3>Producto físico modular</h3>
-            <p>El robot móvil omnidireccional modular constituye el producto principal. A través de módulos intercambiables para fútbol robótico, básquet robótico o circuitos de carrera, la experiencia puede crecer en juego, aprendizaje y programación.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">3</div>
-            <h3>Comunidad y competencias</h3>
-            <p>Las competencias STEM virtuales y presenciales complementan la experiencia. Allí los participantes ponen a prueba sus habilidades, conviven con otros estudiantes y se integran a una comunidad que favorece permanencia e ingresos recurrentes.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="fuentes-ingreso">
-      <div class="container dual-grid">
-        <article class="side-panel text-block">
-          <h3>Formas de vivir la experiencia</h3>
-          <p>MEERA KIDS ofrece distintas maneras de integrarse al ecosistema según la etapa, el tipo de usuario y el objetivo de aprendizaje.</p>
-          <ul>
-            <li>Robot físico omnidireccional para experiencias prácticas de robótica.</li>
-            <li>Módulos intercambiables para fútbol, básquet y circuitos de carrera.</li>
-            <li>Acceso al robot en realidad aumentada para comenzar desde casa o la escuela.</li>
-            <li>Inscripción a competencias STEM virtuales y presenciales.</li>
-            <li>Membresías para dar continuidad a retos, actividades y beneficios del ecosistema.</li>
-            <li>Paquetes educativos para escuelas, academias y programas formativos.</li>
-          </ul>
+      <div class="container grid-3">
+        <article class="card">
+          <div class="card-icon">01</div>
+          <h3>Acceso digital escalable</h3>
+          <p>El acceso en realidad aumentada permite participar en retos virtuales desde computadora o dispositivo móvil, incluso cuando no se cuenta con el robot físico.</p>
         </article>
-        <article class="side-panel text-block">
-          <h3>Una propuesta que crece contigo</h3>
-          <p>La experiencia está diseñada para que cada familia, escuela u organización pueda empezar de forma accesible y ampliar el nivel de participación con el tiempo. Primero se puede explorar el formato digital, después incorporar el robot físico modular y finalmente sumarse a competencias y actividades compartidas con otros estudiantes.</p>
-          <div class="note-box">
-            <strong class="accent-cyan">Ideal para clientes potenciales:</strong>
-            <p class="note">Este enfoque combina producto físico, acceso digital y experiencias educativas para ofrecer una propuesta flexible, atractiva y escalable para distintos contextos de implementación.</p>
+        <article class="card">
+          <div class="card-icon">02</div>
+          <h3>Producto físico modular</h3>
+          <p>MEERA Rover funciona como plataforma principal y puede ampliarse con módulos de fútbol, básquet y circuitos de carrera.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">03</div>
+          <h3>Comunidad y competencias</h3>
+          <p>Los usuarios pueden participar en retos STEM, rankings y competencias virtuales o presenciales para aprender mediante juego y colaboración.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="productos-destacados">
+      <div class="container section-head">
+        <div>
+          <span class="kicker">Modelos 3D principales</span>
+          <h2 class="section-title">Productos con visualización 3D.</h2>
+        </div>
+        <a class="button-secondary" href="catalogo.html">Ver catálogo completo</a>
+      </div>
+      <div class="container product-grid">
+        <article class="product-card" data-category="robot fisico ar">
+          <div class="product-card-image">
+            <model-viewer class="product-model" src="assets/models/Rover.gbl" alt="Modelo 3D de MEERA Rover" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="rover"></model-viewer>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Robot base</span>
+            <span class="tag">Físico</span>
+            <span class="tag">AR</span>
+          </div>
+          <h3>Robot móvil omnidireccional modular MEERA Rover</h3>
+          <p>Plataforma móvil modular para retos de navegación, precisión, fútbol robótico, básquet robótico y circuitos de carrera.</p>
+          <div class="price-row">
+            <span class="price-note">$4900 MXN</span>
+            <a class="button-secondary" href="producto-coche.html">Ver detalle</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="modulo fisico ar">
+          <div class="product-card-image">
+            <model-viewer class="product-model" src="assets/models/Basquet.gbl" alt="Modelo 3D del módulo de básquet robótico" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="basquet"></model-viewer>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Módulo</span>
+            <span class="tag">Reto deportivo</span>
+            <span class="tag">AR</span>
+          </div>
+          <h3>Módulo de básquet robótico</h3>
+          <p>Add-on intercambiable para realizar retos de encestar pelotas en canasta con el robot MEERA Rover.</p>
+          <div class="price-row">
+            <span class="price-note">$850 MXN</span>
+            <a class="button-secondary" href="producto-basquet.html">Ver detalle</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="modulo fisico ar">
+          <div class="product-card-image">
+            <model-viewer class="product-model" src="assets/models/Carreras.gbl" alt="Modelo 3D del módulo de circuito de carrera" camera-controls auto-rotate shadow-intensity="1" exposure="0.95" ar ar-modes="webxr scene-viewer quick-look" loading="lazy" data-product="carreras"></model-viewer>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Módulo</span>
+            <span class="tag">Velocidad</span>
+            <span class="tag">AR</span>
+          </div>
+          <h3>Módulo de circuito de carrera</h3>
+          <p>Add-on intercambiable para retos de velocidad, navegación y control dentro de circuitos gamificados.</p>
+          <div class="price-row">
+            <span class="price-note">$850 MXN</span>
+            <a class="button-secondary" href="producto-carreras.html">Ver detalle</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="stats-grid">
-          <article class="stat">
-            <strong class="accent">8 a 12</strong>
-            <p>Edad objetivo del ecosistema, con actividades diseñadas para aprendizaje progresivo.</p>
-          </article>
-          <article class="stat">
-            <strong class="accent-cyan">Físico + AR</strong>
-            <p>Dos formatos complementarios para ampliar cobertura, continuidad y accesibilidad.</p>
-          </article>
-          <article class="stat">
-            <strong class="accent">Retos STEM</strong>
-            <p>Dinámicas inspiradas en juego, deporte, automatización y exploración tecnológica.</p>
-          </article>
-          <article class="stat">
-            <strong class="accent-cyan">Impacto social</strong>
-            <p>Modelo escalable orientado a reducir la brecha digital en contextos con menos recursos.</p>
-          </article>
+    <section class="section" id="precios">
+      <div class="container section-head">
+        <div>
+          <span class="kicker">Productos y precios</span>
+          <h2 class="section-title">Lista comercial MEERA KIDS.</h2>
         </div>
+        <p class="section-summary">La oferta integra robot base, módulos, membresías, accesos y paquetes para iniciar o ampliar la experiencia.</p>
+      </div>
+      <div class="container price-table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Producto o servicio</th>
+              <th>Presentación</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Producto o servicio">Robot móvil omnidireccional modular MEERA Rover</td>
+              <td data-label="Presentación">Robot móvil modular MEERA KIDS</td>
+              <td data-label="Precio">$4900 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Módulo de fútbol robótico</td>
+              <td data-label="Presentación">Add-on intercambiable para realizar retos de anotación de goles con el robot</td>
+              <td data-label="Precio">$850 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Módulo de básquet robótico</td>
+              <td data-label="Presentación">Add-on intercambiable para realizar retos de encestar pelotas en canasta</td>
+              <td data-label="Precio">$850 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Módulo de circuito de carrera</td>
+              <td data-label="Presentación">Add-on intercambiable para retos de velocidad y navegación en circuitos</td>
+              <td data-label="Precio">$850 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Membresía MEERA KIDS</td>
+              <td data-label="Presentación">Acceso anual a competencias, retos STEM, rankings y comunidad</td>
+              <td data-label="Precio">$900 MXN / año</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Acceso a competencias STEM</td>
+              <td data-label="Presentación">Inscripción a competencia virtual o presencial de robótica</td>
+              <td data-label="Precio">$250 MXN / evento</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Paquete Starter MEERA KIDS</td>
+              <td data-label="Presentación">Robot móvil omnidireccional, un módulo intercambiable y un acceso a competencia STEM</td>
+              <td data-label="Precio">$5500 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Paquete Competidor MEERA KIDS</td>
+              <td data-label="Presentación">Robot móvil omnidireccional, tres módulos intercambiables y un acceso a competencia STEM</td>
+              <td data-label="Precio">$6950 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Producto o servicio">Robots MEERA KIDS en realidad aumentada</td>
+              <td data-label="Presentación">Acceso digital para participar en retos STEM y competencias virtuales sin robot físico</td>
+              <td data-label="Precio">$79 MXN / mes o $450 MXN anual</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-dark">
       <div class="container dual-grid">
         <article class="side-panel text-block">
-          <h3>Cómo funciona la experiencia</h3>
-          <p>Las familias, escuelas y programas educativos pueden integrar robots físicos y actividades en realidad aumentada dentro de talleres, clases y competencias. El estudiante puede operar el robot, resolver retos guiados, personalizar módulos y avanzar hacia la lógica de programación básica.</p>
-          <ul>
-            <li>Retos individuales o en equipo.</li>
-            <li>Uso en escuela, hogar o espacios públicos.</li>
-            <li>Actividades presenciales y virtuales.</li>
-            <li>Diseño modular para múltiples dinámicas.</li>
-          </ul>
+          <span class="kicker">Por qué destaca</span>
+          <h2 class="section-title">No es solo un robot, es un ecosistema.</h2>
+          <p>MEERA KIDS reduce la barrera de entrada a la robótica educativa porque permite comenzar con juego guiado, avanzar hacia programación básica y participar en competencias con otros estudiantes.</p>
           <div class="inline-actions">
-            <a class="button" href="impacto.html">Ver impacto y beneficios</a>
+            <a class="button" href="impacto.html">Conocer impacto</a>
+            <a class="button-ghost" href="contacto.html">Solicitar demo</a>
           </div>
         </article>
         <article class="side-panel text-block">
-          <h3>Clientes y usuarios</h3>
-          <p>La propuesta está pensada para familias, escuelas, academias, programas extracurriculares y organizaciones educativas que buscan impulsar habilidades de lógica, creatividad, resolución de problemas y trabajo colaborativo desde edades tempranas.</p>
-          <div class="product-summary">
-            <img class="inline-logo" src="assets/img/logo-circular.png" alt="Logo circular de MEERA KIDS">
-            <div>
-              <strong>Un ecosistema para aprender tecnología con propósito.</strong>
-              <p class="note">Explora el catálogo, revisa la propuesta de realidad aumentada y adapta el sitio a tu canal de venta o demostración.</p>
-            </div>
-          </div>
+          <h3>Enfoque de aprendizaje</h3>
+          <ul class="feature-list">
+            <li>Retos deportivos y tecnológicos que facilitan la participación.</li>
+            <li>Módulos intercambiables para ampliar la experiencia sin cambiar todo el robot.</li>
+            <li>Realidad aumentada para practicar desde casa, escuela o comunidad.</li>
+            <li>Competencias que fortalecen colaboración, resolución de problemas y pensamiento computacional.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -280,30 +252,27 @@
   <footer class="footer">
     <div class="container footer-main">
       <div class="footer-brand">
-        <img src="assets/img/logo-completo.png" alt="Logo completo de MEERA KIDS">
-        <p class="footer-copy">Robótica educativa gamificada con experiencias físicas, realidad aumentada y competencias tecnológicas.</p>
+        <img src="assets/img/logo-completo-dark.png" alt="Logo de MEERA KIDS">
+        <p class="footer-copy">Ecosistema de robótica educativa gamificada con robots físicos modulares, realidad aumentada y competencias STEM.</p>
       </div>
       <div class="footer-links">
-        <h4>Navegación</h4>
+        <h4>Explorar</h4>
         <ul>
-          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="catalogo.html">Productos y precios</a></li>
           <li><a href="tecnologia-ra.html">Realidad aumentada</a></li>
           <li><a href="impacto.html">Impacto</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Productos destacados</h4>
+        <h4>Productos 3D</h4>
         <ul class="contact-list">
-          <li>Omni Rover AR</li>
-          <li>SCARA Motion AR</li>
-          <li>Aero Mission AR</li>
+          <li>MEERA Rover</li>
+          <li>Módulo de básquet robótico</li>
+          <li>Módulo de circuito de carrera</li>
         </ul>
       </div>
     </div>
-    <div class="container footer-bottom">
-      Sitio demostrativo desarrollado con estructura multipágina y recursos visuales proporcionados por el usuario.
-    </div>
+    <div class="container footer-bottom">Coloca los modelos 3D en assets/models con los nombres Rover.gbl, Basquet.gbl y Carreras.gbl.</div>
   </footer>
 
   <script src="assets/js/main.js"></script>

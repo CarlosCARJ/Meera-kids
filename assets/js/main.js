@@ -4,11 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('is-open');
+      const isOpen = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
     });
 
     menu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => menu.classList.remove('is-open'));
+      link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 
@@ -24,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('active');
 
         items.forEach((card) => {
-          const categories = card.dataset.category.split(' ');
+          const categories = (card.dataset.category || '').split(' ');
           const show = selected === 'all' || categories.includes(selected);
-          card.style.display = show ? '' : 'none';
+          card.hidden = !show;
         });
       });
     });

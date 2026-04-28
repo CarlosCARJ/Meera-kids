@@ -1,23 +1,17 @@
-MEERA KIDS - Sitio web multipágina
+MEERA KIDS - Actualización de sitio web
 
-Contenido del paquete:
-- index.html
-- catalogo.html
-- tecnologia-ra.html
-- impacto.html
-- contacto.html
-- producto-coche.html
-- producto-scara.html
-- producto-dron.html
-- assets/css/styles.css
-- assets/js/main.js
-- assets/img/*
+Cómo usar:
+1. Descomprime este ZIP.
+2. Copia todo el contenido sobre la carpeta raíz de tu proyecto.
+3. Acepta reemplazar los archivos existentes.
+4. Coloca tus modelos 3D en assets/models con estos nombres exactos:
+   - Rover.gbl
+   - Basquet.gbl
+   - Carreras.gbl
 
-Cómo abrirlo:
-1. Descomprime el archivo ZIP.
-2. Abre index.html en tu navegador.
-3. Todo funciona con rutas locales, por lo que no requiere servidor para revisión inicial.
-
-Notas:
-- El formulario de contacto es demostrativo y no envía datos reales.
-- La estructura está lista para agregar backend, pasarela de pago o más productos.
+Cambios principales:
+- Se rediseñó la página manteniendo la estética negra, fiusha y ciberpunk.
+- Se agregó una sección completa de productos y precios.
+- Se retiraron las fichas anteriores que ya no pertenecen a la línea comercial.
+- Solo tienen elemento 3D: MEERA Rover, módulo de básquet y módulo de circuito de carrera.
+- El formulario es demostrativo y no envía datos reales.

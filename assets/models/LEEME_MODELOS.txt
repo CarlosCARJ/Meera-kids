@@ -1,0 +1,7 @@
+Coloca aquí los modelos 3D con estos nombres exactos:
+
+- Rover.gbl
+- Basquet.gbl
+- Carreras.gbl
+
+Este paquete de actualización no incluye los archivos .gbl.
