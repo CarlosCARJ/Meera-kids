@@ -618,6 +618,11 @@ select {
   border-color: rgba(255, 56, 212, 0.4);
 }
 
+.catalog-grid [hidden],
+.catalog-grid .product-card.is-hidden {
+  display: none !important;
+}
+
 .product-card {
   display: flex;
   flex-direction: column;

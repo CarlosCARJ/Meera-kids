@@ -20,19 +20,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('[data-category]');
 
   if (filters.length && items.length) {
-    filters.forEach((button) => {
-      button.addEventListener('click', () => {
-        const selected = button.dataset.filter;
+    const applyProductFilter = (selectedFilter) => {
+      const selected = selectedFilter || 'all';
 
-        filters.forEach((item) => item.classList.remove('active'));
-        button.classList.add('active');
-
-        items.forEach((card) => {
-          const categories = (card.dataset.category || '').split(' ');
-          const show = selected === 'all' || categories.includes(selected);
-          card.hidden = !show;
-        });
+      filters.forEach((button) => {
+        const isActive = button.dataset.filter === selected;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
       });
+
+      items.forEach((card) => {
+        const categories = (card.dataset.category || '')
+          .split(/\s+/)
+          .filter(Boolean);
+        const show = selected === 'all' || categories.includes(selected);
+
+        card.classList.toggle('is-hidden', !show);
+        card.toggleAttribute('hidden', !show);
+        card.setAttribute('aria-hidden', String(!show));
+      });
+    };
+
+    filters.forEach((button) => {
+      button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+      button.addEventListener('click', () => applyProductFilter(button.dataset.filter));
     });
   }
 
