@@ -36,6 +36,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+
+  const modelFallbacks = {
+    rover: ['assets/models/Rover.glb', 'assets/models/rover.glb'],
+    futbol: ['assets/models/Basquet2.glb', 'assets/models/Futbol.glb', 'assets/models/futbol.glb'],
+    basquet: ['assets/models/Basquet.glb', 'assets/models/basquet.glb'],
+    carreras: ['assets/models/Carreras.glb', 'assets/models/carreras.glb']
+  };
+
+  document.querySelectorAll('model-viewer[data-product]').forEach((viewer) => {
+    const product = viewer.dataset.product;
+    const sources = modelFallbacks[product];
+    if (!sources || !sources.length) return;
+
+    let currentIndex = Math.max(0, sources.indexOf(viewer.getAttribute('src')));
+    if (viewer.getAttribute('src') !== sources[currentIndex]) {
+      viewer.setAttribute('src', sources[currentIndex]);
+    }
+
+    viewer.addEventListener('error', () => {
+      currentIndex += 1;
+      if (currentIndex < sources.length) {
+        viewer.setAttribute('src', sources[currentIndex]);
+      }
+    });
+  });
+
   document.querySelectorAll('[data-contact-form]').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();

@@ -1198,3 +1198,17 @@ select {
     font-weight: 800;
   }
 }
+
+model-viewer.product-model {
+  background:
+    radial-gradient(circle at 50% 54%, rgba(245, 245, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 35% 70%, rgba(19, 232, 242, 0.22), transparent 34%),
+    radial-gradient(circle at 66% 30%, rgba(255, 56, 212, 0.18), transparent 32%);
+  border-radius: 22px;
+}
+
+.hero-card model-viewer.product-model,
+.product-card-image model-viewer.product-model,
+.product-visual model-viewer.product-model {
+  filter: drop-shadow(0 28px 34px rgba(0, 0, 0, 0.64)) drop-shadow(0 0 24px rgba(19, 232, 242, 0.22));
+}
