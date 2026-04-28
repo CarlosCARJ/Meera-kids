@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const modelFallbacks = {
-    rover: ['assets/models/Rover.glb', 'assets/models/rover.glb'],
-    futbol: ['assets/models/Basquet2.glb', 'assets/models/Futbol.glb', 'assets/models/futbol.glb'],
-    basquet: ['assets/models/Basquet.glb', 'assets/models/basquet.glb'],
-    carreras: ['assets/models/Carreras.glb', 'assets/models/carreras.glb']
+    rover: ['assets/models/Rover.glb'],
+    futbol: ['assets/models/Futbol.glb'],
+    basquet: ['assets/models/Basquet.glb'],
+    carreras: ['assets/models/Carreras.glb']
   };
 
   document.querySelectorAll('model-viewer[data-product]').forEach((viewer) => {
