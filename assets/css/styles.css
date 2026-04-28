@@ -497,10 +497,13 @@ select {
 }
 
 .grid-3,
-.product-grid,
 .catalog-grid,
 .timeline {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-4,
